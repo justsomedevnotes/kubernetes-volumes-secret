@@ -21,7 +21,8 @@ type: Opaque
 data:
   user: anNtaXRo
   password: bXlzdXBlcnNlY3VyZXBhc3N3b3Jk
-``
+
+```
 
 Now create the secret.
 ```console
@@ -53,6 +54,7 @@ spec:
     - name: vol-secret
       mountPath: /etc/app/secrets
   restartPolicy: Always
+
 ```
 ```console
 kubectl apply -f my-pod.yml
